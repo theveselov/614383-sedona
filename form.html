@@ -14,7 +14,7 @@
                 <button class="main-nav__toggle" type="button">Открыть меню</button>
                 <div class="main-nav__wrapper">
                     <ul class="main-nav__list site-list">
-                        <li class="site-list__item" href="#"><a href="index.html">Главная</a></li>
+                        <li class="site-list__item"><a href="index.html">Главная</a></li>
                         <li class="site-list__item site-list__item--active"><a>Фото и видео</a></li>
                         <li class="site-list__item"><a href="form.html">Форма отзыва</a></li>
                         <li class="site-list__item"><a href="#">Html Academy</a></li>
@@ -38,7 +38,7 @@
                 </header>
                 
                 <form class="review-form" action="https://echo.htmlacademy.ru" method="post">
-                    <h3 class="review-form--title">Представьтесь:</h3>
+                    <h3 class="review-form__title">Представьтесь:</h3>
                     <p>
                         <label for="username">Имя*: </label>
                         <input id="username" type="text" value="" placeholder="Пётр">
@@ -52,7 +52,7 @@
                         <input id="username__third" type="text" value="" placeholder="Александрович">
                     </p>
                     
-                    <h3 class="review-form--title">Контактная информация:</h3>
+                    <h3 class="review-form__title">Контактная информация:</h3>
                     <p>
                         <label for="tel">Контактный телефон*: </label>
                         <input id="tel" type="tel" value="" placeholder="Введите телефон">
@@ -62,7 +62,7 @@
                         <input id="email" type="text" value="" placeholder="Введите e-mail">
                     </p>
                     
-                    <h3 class="review-form--title">Ваше общее впечатление:</h3>
+                    <h3 class="review-form__title">Ваше общее впечатление:</h3>
                     <p>
                         <label for="might-positive">Скорее положительное</label>
                         <input id="might-positive" type="radio" value="">
@@ -76,10 +76,10 @@
                         <input id="idontknow" type="radio" value="">
                     </p>
                 
-                    <h3 class="review-form--title">Посещенные достопримечательности:</h3>
+                    <h3 class="review-form__title">Посещенные достопримечательности:</h3>
                     <p>
-                        <label for="devils bridge">Мост Дьявола</label>
-                        <input id="devils bridge" type="checkbox" value="" checked>
+                        <label for="devils-bridge">Мост Дьявола</label>
+                        <input id="devils-bridge" type="checkbox" value="" checked>
                     </p>
                     <p>
                         <label for="mount-bell">Гора-Колокол</label>
@@ -94,7 +94,7 @@
                         <input id="red-rock" type="checkbox" value="">
                     </p>
                     
-                    <h3 class="review-form--title">Опишите свои эмоции:</h3>
+                    <h3 class="review-form__title">Опишите свои эмоции:</h3>
                     <input type="text" value="" placeholder="Опишите подробно все свои восторги">
                     
                     <button type="submit" class="sumbit-button">Отправить отзыв</button>
@@ -125,15 +125,15 @@
             </div>
         </footer>
         
-        <section class="modal failure-modal">
+        <section class="failure-modal">
             <h2 class="failure-modal__title">Что-то пошло не так!</h2>
             <p class="failure-modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
             <a class="modal-button" href="#">ОК</a>
         </section>
         
-        <section class="modal success-modal">
-            <h2 class="failure-modal__title">Ваш отзыв отправлен!</h2>
-            <p class="failure-modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+        <section class="success-modal">
+            <h2 class="success-modal__title">Ваш отзыв отправлен!</h2>
+            <p class="succes-modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
             <a class="modal-button" href="#">Закрыть окно</a>
         </section>
     </body>

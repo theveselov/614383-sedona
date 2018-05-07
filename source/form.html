@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Седона - Фото</title>
+</head>
+
+<body>
+    <header class="page-header">
+        <a class="page-header__logo">
+                <img class="page-header__logo-image" src="#" alt="Седона">
+            </a>
+        <nav class="main-nav">
+            <button class="main-nav__toggle" type="button">Открыть меню</button>
+            <div class="main-nav__wrapper">
+                <ul class="main-nav__list site-list">
+                    <li class="site-list__item"><a href="index.html">Главная</a></li>
+                    <li class="site-list__item site-list__item--active"><a>Фото и видео</a></li>
+                    <li class="site-list__item"><a href="form.html">Форма отзыва</a></li>
+                    <li class="site-list__item"><a href="#">Html Academy</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1 class="visually-hidden">Отзыв</h1>
+
+        <div class="promo-photo">
+            <img class="promo-photo__text" src="#" alt="Sedona">
+        </div>
+
+        <section class="review-us">
+            <header class="review-us__header">
+                <h3 class="review-us__header">Оставьте свой отзыв</h3>
+                <p class="review-us__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+            </header>
+
+            <form class="review-form" action="https://echo.htmlacademy.ru" method="post">
+                <h3 class="review-form__title">Представьтесь:</h3>
+                <p>
+                    <label for="username">Имя*: </label>
+                    <input id="username" type="text" value="" placeholder="Пётр">
+                </p>
+                <p>
+                    <label for="username__second">Фамилия: </label>
+                    <input id="username__second" type="text" value="" placeholder="Иванов">
+                </p>
+                <p>
+                    <label for="username__third">Отчество: </label>
+                    <input id="username__third" type="text" value="" placeholder="Александрович">
+                </p>
+
+                <h3 class="review-form__title">Контактная информация:</h3>
+                <p>
+                    <label for="tel">Контактный телефон*: </label>
+                    <input id="tel" type="tel" value="" placeholder="Введите телефон">
+                </p>
+                <p>
+                    <label for="email">Электронная почта*: </label>
+                    <input id="email" type="text" value="" placeholder="Введите e-mail">
+                </p>
+
+                <h3 class="review-form__title">Ваше общее впечатление:</h3>
+                <p>
+                    <label for="might-positive">Скорее положительное</label>
+                    <input id="might-positive" type="radio" value="">
+                </p>
+                <p>
+                    <label for="might-negative">Скорее отрицательное</label>
+                    <input id="might-negative" type="radio" value="">
+                </p>
+                <p>
+                    <label for="idontknow">Затрудняюсь ответить</label>
+                    <input id="idontknow" type="radio" value="">
+                </p>
+
+                <h3 class="review-form__title">Посещенные достопримечательности:</h3>
+                <p>
+                    <label for="devils-bridge">Мост Дьявола</label>
+                    <input id="devils-bridge" type="checkbox" value="" checked>
+                </p>
+                <p>
+                    <label for="mount-bell">Гора-Колокол</label>
+                    <input id="mount-bell" type="checkbox" value="" checked>
+                </p>
+                <p>
+                    <label for="slide-park">Слайд-парк</label>
+                    <input id="slide-park" type="checkbox" value="" checked>
+                </p>
+                <p>
+                    <label for="red-rock">Красные скалы</label>
+                    <input id="red-rock" type="checkbox" value="">
+                </p>
+
+                <h3 class="review-form__title">Опишите свои эмоции:</h3>
+                <input type="text" value="" placeholder="Опишите подробно все свои восторги">
+
+                <button type="submit" class="sumbit-button">Отправить отзыв</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+        <h3 class="page-footer__tag">#VISITSEDONA</h3>
+
+        <div class="page-footer__social social">
+            <ul class="social-list">
+                <li class="social-item">
+                    <a class="social-link social-link--twitter" href="#">Twitter</a>
+                </li>
+                <li class="social-item">
+                    <a class="social-link social-link--facebook" href="#">Facebook</a>
+                </li>
+                <li class="social-item">
+                    <a class="social-link social-link--youtube" href="#">YouTube</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="page-footer__copyright copyright">
+            <b class="copyright__text">Разработано:</b>
+            <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
+    </footer>
+
+    <section class="failure-modal">
+        <h2 class="failure-modal__title">Что-то пошло не так!</h2>
+        <p class="failure-modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <a class="modal-button" href="#">ОК</a>
+    </section>
+
+    <section class="success-modal">
+        <h2 class="success-modal__title">Ваш отзыв отправлен!</h2>
+        <p class="success-modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+        <a class="modal-button" href="#">Закрыть окно</a>
+    </section>
+</body>
+
+</html>

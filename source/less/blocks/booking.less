@@ -1,14 +1,22 @@
 .booking {
-    .mobile-center();
-    padding: 28px 20px 50px;
+  .mobile-center();
+  padding: 28px 20px 50px;
 }
 
 .booking__trigger {
-    font-size: 21px;
-    line-height: 26px;
-    color: @heading-dark;
+  font-size: 21px;
+  line-height: 26px;
+  color: @heading-dark;
 }
 
 .booking__lead {
-    margin: 24px 0 40px;
+  margin: 24px 0 40px;
+}
+
+@media (min-width: @tablet-width) {
+  .booking {
+    margin: 0 auto;
+    padding: 50px 0;
+    width: 458px;
+  }
 }

@@ -1,3 +1,17 @@
 .video__item {
-    .mobile-center();
+  .mobile-center();
+}
+
+@media (min-width: @tablet-width) {
+  .video__item {
+    .tablet-center();
+    padding: 0 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .video__item {
+    width: auto;
+    padding: 0;
+  }
 }

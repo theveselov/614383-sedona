@@ -1,8 +1,23 @@
 .player__screen {
-    margin: 0 auto;
+  margin: 0 auto;
 
-    width: 320px;
-    height: 200px;
+  width: 320px;
+  height: 200px;
 
-    background: url("/img/video-mobile@1x.jpg") center no-repeat;
+  background: url("../../img/video-mobile@1x.jpg") center no-repeat;
+}
+
+@media (min-width: @tablet-width) {
+  .player__screen {
+    width: 648px;
+    height: 500px;
+
+    background-size: cover;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .player__screen {
+    width: 800px;
+  }
 }

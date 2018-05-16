@@ -1,10 +1,27 @@
 .copyright {
-    .mobile-center();
-    padding: 0 20px;
+  display: flex;
+  align-items: center;
+
+  .mobile-center();
+  padding: 0 20px;
+}
+
+.copyright__logo {
+  display: block;
+  .reset-indents();
 }
 
 .copyright__text {
-    font-size: 14px;
-    line-height: 26px;
-    color: @heading-dark;
+  .reset-indents();
+
+  font-size: 14px;
+  line-height: 26px;
+  color: @heading-dark;
+}
+
+@media (min-width: @tablet-width) {
+  .copyright {
+    .reset-indents();
+    width: auto;
+  }
 }

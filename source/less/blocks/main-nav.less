@@ -1,0 +1,36 @@
+.main-nav {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 40px;
+    color: @heading-white;
+
+    background-color: @bg-blue;
+}
+
+.main-nav__list {
+    .reset-list();
+
+    font: inherit;
+}
+
+.main-nav__link,
+.main-nav__link:visited {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    font: inherit;
+    color: @heading-white;
+
+    &:hover,
+    &:focus {
+        background-color: @bg-blue-hover;
+    }
+
+    &:active {
+        color: @active-white;
+
+        background-color: @bg-blue-active;
+    }
+}

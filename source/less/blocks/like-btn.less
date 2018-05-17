@@ -8,4 +8,47 @@
   &:visited {
     color: @heading-dark;
   }
+
+  &:hover,
+  &:focus {
+    .like-btn__icon {
+      opacity: 0.8;
+    }
+  }
+}
+
+.like-btn__icon {
+  display: inline-block;
+  vertical-align: baseline;
+  width: 23px;
+  height: 21px;
+  margin-right: 15px;
+
+  svg {
+    fill: #b2b2b2;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .like-btn__icon {
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .like-btn {
+    z-index: 3;
+  }
+
+  .like-btn__counter {
+    color: @heading-white;
+  }
+
+  .like-btn__icon {
+    opacity: 1;
+
+    svg {
+      fill: #ffffff;
+    }
+  }
 }

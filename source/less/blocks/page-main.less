@@ -1,9 +1,46 @@
 .page-main {
   margin: 0 auto;
-  padding: 40px 0 0;
+  padding-top: 42px;
   width: 100%;
+
+  &--inner {
+    padding-top: 38px;
+  }
+}
+
+.page-main__lead {
+  margin-bottom: 26px;
+}
+
+.page-main__lead--testimonial {
+  margin-bottom: 16px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-main {
+    padding-top: 0;
+  }
+
+  .page-main__lead {
+    margin-bottom: 0;
+
+    &--testimonial {
+      padding-top: 60px;
+      padding-bottom: 50px;
+    }
+  }
 }
 
 @media (min-width: @desktop-width) {
-  .desktop-center();
+  .page-main {
+    .desktop-center();
+    padding-top: 35px;
+
+    background-color: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .page-main__lead--testimonial {
+    padding-bottom: 40px;
+  }
 }

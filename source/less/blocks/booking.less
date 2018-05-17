@@ -1,6 +1,6 @@
 .booking {
   .mobile-center();
-  padding: 28px 20px 50px;
+  padding: 26px 20px 50px;
 }
 
 .booking__trigger {
@@ -10,13 +10,39 @@
 }
 
 .booking__lead {
-  margin: 24px 0 40px;
+  margin: 20px 0 35px;
+
+  br {
+    display: none;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .booking {
     margin: 0 auto;
-    padding: 50px 0;
+    padding: 55px 0;
     width: 458px;
+  }
+
+  .booking__trigger {
+    font-size: 30px;
+  }
+
+  .booking__lead {
+    margin: 26px 0 42px;
+
+    br {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .booking {
+    padding-bottom: 65px;
+  }
+
+  .booking__lead {
+    margin-bottom: 46px;
   }
 }

@@ -5,7 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Седона: отправить отзыв</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <script>
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.min.js" async></script>
 </head>
 
 <body>
@@ -92,7 +97,7 @@
                 </div>
             </fieldset>
             <fieldset class="testimonial-form__group testimonial-form__group--radio">
-                <legend class="testimonial-form__legend">Ваше общее впечатление:</legend>
+                <div class="testimonial-form__legend testimonial-form__legend--radio">Ваше общее впечатление:</div>
                 <div class="testimonial-form__flex-wrap">
                     <input class="visually-hidden testimonial-form__input--radio" type="radio" name="filling" value="positive" id="radio-positive" checked>
                     <label class="testimonial-form__label testimonial-form__label--radio" for="radio-positive">Скорее положительное</label>

@@ -1,13 +1,14 @@
 .video {
-  padding-top: 30px;
+  padding-top: 33px;
 }
 
 .video__lead {
-  margin-bottom: 34px;
+  padding: 0 25px 34px;
 }
 
 .video__item {
   .mobile-center();
+  margin-bottom: 40px;
 }
 
 @media (min-width: @tablet-width) {
@@ -15,11 +16,22 @@
     .tablet-center();
     padding: 0 60px;
   }
+
+  .video__lead {
+    padding-top: 27px;
+    padding-bottom: 73px;
+    width: 480px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .video__item {
     width: auto;
     padding: 0;
+  }
+
+  .video__lead {
+    padding-top: 30px;
+    padding-bottom: 72px;
   }
 }

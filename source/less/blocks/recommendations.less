@@ -51,14 +51,20 @@
 }
 
 .recommendations__heading {
-  margin: 13px 0;
+  margin: 13px 0 15px;
 }
 
 .recommendations__text {
   .reset-indents();
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 
   line-height: 21px;
+}
+
+.recommendations__text--transform {
+  br {
+    display: none;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -80,7 +86,7 @@
     flex-direction: column;
     align-items: center;
 
-    padding: 60px 45px 30px;
+    padding: 60px 45px 32px;
     width: 256px;
 
     &:nth-child(2) {
@@ -123,14 +129,20 @@
 @media (min-width: @desktop-width) {
   .recommendations {
     .desktop-center();
-    padding-bottom: 15px;
   }
 
   .recommendations__item {
     width: 400px;
+    padding-bottom: 54px;
   }
 
   .recommendations__text {
-    width: 310px;
+    width: 290px;
+  }
+
+  .recommendations__text--transform {
+    br {
+      display: block;
+    }
   }
 }

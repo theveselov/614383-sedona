@@ -20,6 +20,12 @@
   .reset-indents();
 
   text-align: center;
+
+  &--transform-tab {
+    br {
+      display: none;
+    }
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -30,11 +36,19 @@
   }
 
   .lead__caption {
+    margin-bottom: 23px;
+
     font-size: 30px;
     line-height: 40px;
   }
 
   .lead__text {
     margin-bottom: 0;
+
+    &--transform-tab {
+      br {
+        display: block;
+      }
+    }
   }
 }

@@ -199,7 +199,7 @@ input[type="radio"].visually-hidden {
   }
   .page-header__banner--page {
     padding: 94px 0 114px;
-    background-size: 768px 518px;
+    background-size: 836px 518px;
   }
   .page-header__banner--page .page-header__slogan {
     display: block;
@@ -972,7 +972,8 @@ input[type="radio"].visually-hidden {
   padding: 0 20px;
 }
 .social__tag {
-  margin-bottom: 36px;
+  margin-bottom: 35px;
+  margin-left: -13px;
   font-size: 21px;
   line-height: 26px;
   color: #000000;
@@ -1014,16 +1015,19 @@ input[type="radio"].visually-hidden {
   height: 14px;
   background: url("../img/icon-twitter.svg") center no-repeat;
   background-size: contain;
+  cursor: pointer;
 }
 .social__item--fb::before {
   width: 9px;
   height: 18px;
   background-image: url("../img/icon-facebook.svg");
+  cursor: pointer;
 }
 .social__item--youtube::before {
   width: 20px;
   height: 14px;
   background-image: url("../img/icon-youtube.svg");
+  cursor: pointer;
 }
 .social__item:hover,
 .social__item:focus {
@@ -1078,6 +1082,7 @@ input[type="radio"].visually-hidden {
   height: 34px;
   margin: 0;
   padding: 0;
+  padding-right: 76px;
 }
 .copyright__logo:hover svg,
 .copyright__logo:focus svg {
@@ -1089,7 +1094,7 @@ input[type="radio"].visually-hidden {
 .copyright__text {
   margin: 0;
   padding: 0;
-  margin-right: 12px;
+  margin-right: 9px;
   font-size: 14px;
   line-height: 26px;
   color: #000000;
@@ -1654,18 +1659,18 @@ input[type="radio"].visually-hidden {
   background-color: #f2f2f2;
   border-radius: 50%;
 }
-.testimonial-form__input--radio:hover + .testimonial-form__label--radio::before {
+.testimonial-form__input-radio:hover + .testimonial-form__label--radio::before {
   background-color: #e5e5e5;
 }
-.testimonial-form__input--radio:focus + .testimonial-form__label--radio::before {
+.testimonial-form__input-radio:focus + .testimonial-form__label--radio::before {
   background-color: #e5e5e5;
   -webkit-box-shadow: 0 0 0 1px #81b3d2;
           box-shadow: 0 0 0 1px #81b3d2;
 }
-.testimonial-form__input--radio:active + .testimonial-form__label--radio::before {
+.testimonial-form__input-radio:active + .testimonial-form__label--radio::before {
   background-color: #d5d5d5;
 }
-.testimonial-form__input--radio:checked + .testimonial-form__label--radio::after {
+.testimonial-form__input-radio:checked + .testimonial-form__label--radio::after {
   content: "";
   position: absolute;
   top: 18px;
@@ -1675,7 +1680,7 @@ input[type="radio"].visually-hidden {
   background-color: #333333;
   border-radius: 50%;
 }
-.testimonial-form__input--radio:checked:active + .testimonial-form__label--radio::after {
+.testimonial-form__input-radio:checked:active + .testimonial-form__label--radio::after {
   background-color: #a4a4a4;
 }
 .testimonial-form__label--checkbox {
@@ -1989,7 +1994,7 @@ input[type="radio"].visually-hidden {
     top: 0;
     left: 5px;
   }
-  .testimonial-form__input--radio:checked + .testimonial-form__label--radio::after {
+  .testimonial-form__input-radio:checked + .testimonial-form__label--radio::after {
     top: 18px;
     left: 23px;
   }

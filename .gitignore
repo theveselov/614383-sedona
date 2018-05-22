@@ -5,8 +5,10 @@
 *.pdf
 *.psd
 *.sublime*
-+build/
+build/
 node_modules/
 npm-debug.*
 source/css/*.css
+source/server.bat
+sedona/
 Thumbs.db

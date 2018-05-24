@@ -1495,6 +1495,7 @@ input[type="radio"].visually-hidden {
   text-transform: none;
   background-color: #f2f2f2;
   border: 2px solid #f2f2f2;
+  resize: vertical;
 }
 .testimonial-form__group textarea {
   width: 100%;
